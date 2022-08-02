@@ -1,0 +1,790 @@
+.header--tripPage {
+	margin-bottom: 150px;
+}
+
+.header--tripPage:before {
+	filter: blur(1px);
+}
+
+.header__content--tripPage {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.header--tripPage__tripType {
+	padding-bottom: 10px;
+}
+
+.header--tripPage__buttons .button__arrow {
+	margin-left: 9px;
+}
+
+.favorits__btn--header {
+	flex: 0 0 auto;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.tripPage__calendar__imgWrap {
+	position: relative;
+	width: 100%;
+	height: 877px;
+}
+
+.tripPage__calendar__img {
+	position: absolute;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.tripPage__calendar__content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.tripPage__calendar__heading {
+	background: #FFFFFF;
+	padding: 3px 13px;
+}
+
+.tripPage__calendar__widget {
+	width: 100%;
+	height: 456px;
+}
+
+
+/* ********* ********* DESCRIPTION ********* ********* */
+
+
+.tripPage__description__wrap {
+	margin: 0 -46px;
+}
+
+.tripPage__description__content,
+.tripPage__description__options {
+	margin: 0 46px;
+}
+
+.tripPage__description__heading {
+	margin-bottom: 40px;
+}
+
+.tripPage__option {
+	position: relative;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.tripPage__description__options__option {
+	width: 178px;
+	height: 117px;
+}
+
+.tripPage__additional__options__option {
+	padding-left: 18px;
+	white-space: nowrap;
+}
+
+.tripPage__additional__options__option:last-child {
+	min-width: 178px;
+}
+
+.option__circle {
+	width: 57px;
+	height: 57px;
+	border-radius: 50%;
+	background: #FFC700;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.option__content {
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	position: relative;
+	background: #ffff;
+	overflow: hidden;
+}
+
+.tripPage__description__option__content {
+	width: 160px;
+	height: 100px;
+}
+
+.tripPage__additional__option__content {
+	width: 100%;
+	height: 100%;
+	margin-top: 17px;
+}
+
+.option__content:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	width: 57px;
+	height: 57px;
+	border-radius: 50%;
+	background: #FFC700;
+	top: -17px;
+	left: -18px;
+	filter: blur(10px);
+}
+
+.description__option__main {
+	margin-bottom: 4px;
+}
+
+.description__option__icon {
+	margin-right: 10px;
+}
+
+.description__option__icon--cost {
+	width: 30px;
+	height: 30px;
+	stroke: #0499DD;
+}
+
+.description__option__icon--time {
+	width: 20px;
+	height: 20px;
+	fill: #0499DD;
+}
+
+.description__option__main__text {
+	font-size: 24px;
+	line-height: 29px;
+}
+
+
+/* ********* ********* PATH ********* ********* */
+
+.tripPage__path {
+	position: relative;
+}
+
+.tripPage__path__list {
+	list-style-type: none;
+}
+
+.tripPage__path__addidional__heading {
+	margin: 40px 0;
+}
+
+.tripPage__path__list__item {
+	padding-left: 38px;
+	position: relative;
+}
+
+.tripPage__path__list__item:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #FFC700;
+}
+
+.tripPage__path__gallery {
+	position: absolute;
+}
+
+.tripPage__path__gallery__content {
+	font-size: 0;
+}
+
+.tripPage__path__gallery__item {
+	display: inline-block;
+	margin-right: 18px;
+	position: relative;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.tripPage__path__gallery__item:hover:before {
+	opacity: .8;
+}
+
+.tripPage__path__gallery__item:hover .tripPage__path__gallery__imgCaption {
+	transform: scale(1.1);
+}
+
+.tripPage__path__gallery__item:last-child {
+	margin-right: 0;
+}
+
+.tripPage__path__gallery__item:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+	border-radius: 10px;
+	transition: .2s;
+}
+
+.tripPage__path__gallery__img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.tripPage__path__gallery__imgCaption {
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFC700;
+	position: absolute;
+	bottom: 22px;
+	left: 27px;
+	transition: .2s;
+}
+
+/* ********* ********* CALENDAR ********* ********* */
+
+
+/* ********* CALENDAR HEADER ********* */
+
+.tripPage__calendar__widget .ui-datepicker {
+	width: 100%;
+	height: 100%;
+	background: #EDEDED;
+	border-radius: 10px;
+	padding: 30px;
+	display: flex !important;
+	flex-direction: column;
+}
+
+.tripPage__calendar__widget .ui-datepicker-header {
+	margin: 20px 0 !important;
+	background: transparent !important;
+	border: none !important;
+	color: #0499DD !important;
+	font-size: 24px !important;
+	line-height: 29px !important;
+	font-weight: 700 !important;
+	padding: 0 !important;
+}
+
+.tripPage__calendar__widget .ui-datepicker .ui-datepicker-title {
+	margin: 0;
+	line-height: 29px !important;
+	padding: 0 !important;
+}
+
+.tripPage__calendar__widget .ui-widget-header .ui-datepicker-prev,
+.tripPage__calendar__widget .ui-widget-header .ui-datepicker-next {
+	height: 100%;
+	top: 0;
+}
+
+.tripPage__calendar__widget .ui-widget-header .ui-datepicker-prev {
+	left: 0;
+}
+
+.tripPage__calendar__widget .ui-widget-header .ui-datepicker-next {
+	right: 0;
+}
+
+.tripPage__calendar__widget .ui-widget-header .ui-icon {
+	width: 10px;
+	height: 18px;
+	background-image: url("../../img/icons/calendar__next.png");
+	background-position: 0;
+}
+
+.tripPage__calendar__widget .ui-widget-header .ui-datepicker-prev .ui-icon {
+	transform: rotate(180deg);
+	left: 20px;
+	margin-left: 0;
+}
+
+.tripPage__calendar__widget .ui-widget-header .ui-datepicker-next .ui-icon {
+	right: 20px;
+}
+
+
+/* ********* CALENDAR BODY ********* */
+
+
+.tripPage__calendar__widget .ui-datepicker-calendar {
+	font-size: 18px !important;
+	display: flex !important;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100% !important;
+}
+
+.tripPage__calendar__widget .ui-datepicker th {
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 18px 5px;
+}
+
+.tripPage__calendar__widget .ui-datepicker-calendar tbody {
+	margin-bottom: 30px;
+}
+
+.tripPage__calendar__widget .ui-datepicker tr {
+	display: flex;
+	justify-content: space-around;
+}
+
+.tripPage__calendar__widget .ui-datepicker td {
+	padding: 10px 5px 0;
+}
+
+.tripPage__calendar__widget .ui-datepicker tr:first-child td {
+	padding-top: 0;
+}
+
+.tripPage__calendar__widget .ui-datepicker tr td:first-child {
+	padding-left: 0;
+}
+
+.tripPage__calendar__widget .ui-datepicker tr td:last-child {
+	padding-right: 0;
+}
+
+.tripPage__calendar__widget .ui-state-default,
+.tripPage__calendar__widget .ui-widget-content .ui-state-default,
+.tripPage__calendar__widget .ui-widget-header .ui-state-default,
+.tripPage__calendar__widget .ui-button,
+.tripPage__calendar__widget .ui-button.ui-state-disabled:hover,
+.tripPage__calendar__widget .ui-button.ui-state-disabled:active {
+	color: #282828;
+	border: none;
+	background: transparent;
+	padding: 0 !important;
+	text-align: center !important;
+	position: relative;
+}
+
+.tripPage__calendar__widget__time {
+	font-size: 10px;
+	line-height: 12px;
+	text-align: center !important;
+	padding: 0 !important;
+}
+
+.tripPage__calendar__widget__time--active {
+	color: #0499DD;
+}
+
+.tripPage__calendar__widget__time--inactive {
+	color: transparent;
+	visibility: hidden;
+}
+
+.ui-datepicker .ui-state-active.ui-state-default .tripPage__calendar__widget__time--active {
+	color: #ffff !important;
+}
+
+
+
+/* ********* ********* FORM ********* ********* */
+
+
+.tripPage__form__section {
+	position: relative;
+}
+
+.tripPage__form__img {
+	object-fit: cover;
+}
+
+.tripPage__form__input {
+	position: relative;
+}
+
+.tripPage__form__input+.tripPage__form__input {
+	margin-top: 20px;
+}
+
+.tripPage__form__buttons {
+	margin-top: 40px;
+}
+
+.tripPage__form__buttons__submit {
+	flex: 1;
+}
+
+
+
+/* ********* ********* MEDIA ********* ********* */
+
+
+@media (min-width: 0) {
+
+	.header--tripPage {
+		height: 926px;
+	}
+
+	.header__bg--tripPage {
+		object-position: -530px;
+	}
+
+	.header--tripPage__buttons {
+		margin-top: 60px;
+	}
+
+	.header--tripPage__buttons__btn {
+		margin-right: 20px;
+		flex: 1 1 auto;
+		text-align: center;
+	}
+
+	.tripPage__calendar__img {
+		right: 124px;
+	}
+
+	.tripPage__calendar__heading {
+		margin-bottom: 94px;
+		width: fit-content;
+	}
+
+	.tripPage__calendar__content {
+		width: calc(100% + var(--padding) * 2);
+		right: calc(var(--padding)*-1);
+		align-items: center;
+	}
+
+	.tripPage__description__wrap {
+		flex-wrap: wrap;
+	}
+
+	.tripPage__description__content {
+		margin-bottom: 60px;
+	}
+
+	.tripPage__description__options__wrap {
+		margin: 0 -12px -40px;
+		width: calc(100% + 24px);
+		flex-wrap: wrap;
+	}
+
+	.tripPage__additional__options__wrap {
+		flex-wrap: wrap;
+	}
+
+	.tripPage__description__options__option {
+		margin: 0 12px 40px;
+	}
+
+	.tripPage__path__content {
+		padding-bottom: 713px;
+	}
+
+	.tripPage__path__heading {
+		margin-bottom: 64px;
+	}
+
+	.tripPage__path__list--additional {
+		margin-bottom: -40px;
+	}
+
+	.tripPage__path__list__item {
+		margin-bottom: 40px;
+	}
+
+	.tripPage__path__gallery {
+		bottom: 0;
+		left: var(--padding);
+		width: calc(100% - var(--padding));
+	}
+
+	.tripPage__path__gallery__item {
+		height: 540px;
+		width: 280px;
+	}
+
+	.tripPage__additional__options__wrap {
+		margin: 0 -10px -40px;
+	}
+
+	.tripPage__additional__options__option {
+		margin: 0 10px 40px;
+		min-width: 176px;
+	}
+
+	.tripPage__additional__option__content {
+		padding: 24px 20px;
+	}
+
+	.description__option__additionalText {
+		font-size: 13px;
+	}
+
+	.tripPage__form__img {
+		height: 340px;
+		width: 100%;
+	}
+
+	.tripPage__form__wrap {
+		margin-top: 40px;
+	}
+
+	.tripPage__form__content {
+		width: 100%;
+	}
+
+	.tripPage__form__buttons {
+		margin-bottom: 150px;
+	}
+
+	.tripPage__form__buttons__submit {
+		margin-right: 20px;
+	}
+}
+
+@media (min-width: 375px) {
+
+	.tripPage__additional__option__content {
+		padding: 24px 2px;
+	}
+
+}
+
+@media (min-width: 576px) {
+
+	.header--tripPage {
+		height: 1024px;
+	}
+
+	.header__bg--tripPage {
+		object-position: -440px;
+	}
+
+	.header--tripPage__buttons {
+		margin-top: 70px;
+	}
+
+	.header--tripPage__buttons__btn {
+		margin-right: 15px;
+		flex: 0 0 auto;
+	}
+
+	.tripPage__calendar__img {
+		right: 210px;
+	}
+
+	.tripPage__calendar__heading {
+		margin-bottom: 83px;
+	}
+
+	.tripPage__calendar__content {
+		width: 100%;
+		right: 0;
+		align-items: flex-end;
+	}
+
+	.tripPage__path__heading {
+		margin-bottom: 90px;
+	}
+
+	.tripPage__path__list--additional {
+		margin-bottom: -20px;
+	}
+
+	.tripPage__path__list__item {
+		margin-bottom: 20px;
+	}
+
+	.tripPage__path__content {
+		padding-bottom: 734px;
+	}
+
+}
+
+@media (min-width: 633px) {
+
+	.tripPage__description__options__wrap {
+		margin: 0 -19px -40px;
+		width: calc(100% + 38px);
+	}
+
+	.tripPage__description__options__option {
+		margin: 0 19px 40px;
+	}
+
+	.tripPage__path__gallery__item {
+		height: 570px;
+		width: 413px;
+	}
+
+	.tripPage__additional__options__wrap {
+		margin: 0 -13px -40px;
+	}
+
+	.tripPage__additional__options__option {
+		margin: 0 13px 40px;
+		min-width: unset;
+	}
+
+	.tripPage__additional__option__content {
+		padding: 24px 9px;
+	}
+
+	.description__option__additionalText {
+		font-size: 14px;
+	}
+
+	.tripPage__form__section {
+		height: 500px;
+	}
+
+	.tripPage__form__img {
+		position: absolute;
+		height: 100%;
+		right: calc(400px + var(--padding));
+		border-radius: 0px 10px 0px 0px;
+		width: unset;
+	}
+
+	.tripPage__form__wrap {
+		height: 100%;
+		margin-top: 0;
+		justify-content: flex-end;
+	}
+
+	.tripPage__form__content {
+		width: 315px;
+	}
+
+	.tripPage__form__buttons {
+		margin-bottom: 0;
+	}
+
+}
+
+@media (min-width: 769px) {
+
+	.header--tripPage {
+		height: 670px;
+	}
+
+	.header__bg--tripPage {
+		object-position: 0;
+	}
+
+	.header--tripPage__buttons {
+		margin-top: 40px;
+	}
+
+	.tripPage__calendar__heading {
+		margin-bottom: 90px;
+	}
+
+	.tripPage__description__options__wrap {
+		flex-wrap: nowrap;
+	}
+
+	.tripPage__path__list--additional {
+		margin-bottom: -21px;
+	}
+
+	.tripPage__path__list__item {
+		margin-bottom: 21px;
+	}
+
+	.tripPage__form__img {
+		right: calc(477px + var(--padding));
+		object-position: 0;
+	}
+
+	.tripPage__form__section {
+		height: 640px;
+	}
+
+	.tripPage__form__content {
+		width: 360px;
+	}
+
+	.tripPage__form__buttons__submit {
+		margin-right: 45px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.tripPage__calendar__img {
+		right: 455px;
+	}
+
+	.tripPage__calendar__content {
+		width: 50%;
+		right: 0;
+	}
+
+	.tripPage__path__container {
+		height: 653px;
+	}
+
+	.tripPage__path__content {
+		padding-bottom: 0;
+		height: 570px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 49%;
+	}
+
+	.tripPage__path__gallery {
+		top: 0;
+		left: calc(0.49*(100% - var(--padding)*2) + 117px + var(--padding));
+		width: calc(100% - 0.49*(100% - var(--padding)*2) - 117px - var(--padding));
+	}
+
+}
+
+@media (min-width: 1380px) {
+
+	.tripPage__description__wrap {
+		flex-wrap: nowrap;
+	}
+
+	.tripPage__description__content {
+		margin-bottom: 0;
+	}
+
+	.tripPage__description__options__wrap {
+		margin: 0 -28px;
+		width: calc(100% + 56px);
+	}
+
+	.tripPage__description__options__option {
+		margin: 0 28px;
+	}
+
+	.tripPage__additional__options__wrap {
+		margin: 0 -11.5px;
+	}
+
+	.tripPage__additional__options__wrap {
+		flex-wrap: nowrap;
+	}
+
+	.tripPage__additional__options__option {
+		margin: 0 11.5px;
+		width: 100%;
+	}
+
+	.tripPage__additional__options__option:last-child {
+		margin-left: 19.5px;
+	}
+}
+
+@media (min-width: 1441px) {
+
+	.tripPage__calendar__img {
+		right: 455px;
+	}
+
+}

@@ -1,0 +1,364 @@
+.excursions__main {
+	margin: 38px -19px 0;
+}
+
+.filter__main {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	flex: 1 1 26%;
+	margin: 0 19px;
+	height: fit-content;
+}
+
+.excursions__main__listing {
+	flex: 1 1 74%;
+	margin: 0 19px;
+}
+
+.listing__heading {
+	margin-bottom: 40px;
+}
+
+.card {
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	position: relative;
+}
+
+.card__imgWrap {
+	flex: 0 1 30.25%;
+	position: relative;
+	overflow: hidden;
+	font-size: 0;
+}
+
+.card__img {
+	transition: .5s;
+	transform: scale(1.0);
+}
+
+.card__content {
+	flex: 1 1;
+	background: #FFFFFF;
+}
+
+.card__content__header {
+	margin-bottom: 20px;
+}
+
+.card__content__header__name {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.card__content__options {
+	margin: 0 -5px 20px;
+}
+
+.card__content__options__option {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 5px;
+}
+
+.option__main__icon {
+	margin-right: 6px;
+}
+
+.option__main__icon--normal {
+	width: 22px;
+	height: 22px;
+	stroke: #0499DD;
+}
+
+.option__main__icon--small {
+	width: 15px;
+	height: 15px;
+	fill: #0499DD;
+}
+
+.option__main__text {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.option__additionalText {
+	font-size: 10px;
+}
+
+.card__content__description {
+	padding-left: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.card__content__description:before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 0;
+	left: 0;
+	border-left: 3px solid #0499DD;
+}
+
+.card__link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.card__button {
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.listing__nav {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.listing__nav__pageNum {
+	cursor: pointer;
+	padding: 0 6px;
+}
+
+.listing__nav__btn {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	cursor: pointer;
+}
+
+.listing__nav__btn__icon {
+	width: 5px;
+	height: 8px;
+	stroke: black;
+	fill: none;
+}
+
+.nav__btn__next__icon {
+	transform: rotate(180deg);
+}
+
+.nav__pageNum--active {
+	color: #0499DD;
+}
+
+.listing__nav__btn.inactive .listing__nav__btn__icon {
+	stroke: #D4D4D4;
+	cursor: default;
+}
+
+
+
+/* ********* ********* HOVERS ********* ********* */
+
+
+.card:hover .card__img {
+	transform: scale(1.05);
+}
+
+
+/* ********* ********* MEDIA ********* ********* */
+
+
+@media (min-width: 0) {
+
+	.excursions__main {
+		flex-direction: column;
+		margin-bottom: 150px;
+	}
+
+	.filter__main {
+		order: 1;
+		padding: 25px 35px;
+		min-width: auto;
+	}
+
+	.card {
+		flex-direction: column;
+		margin-bottom: 40px;
+	}
+
+	.card__imgWrap {
+		min-width: 238px;
+		border-radius: 10px 10px 0 0;
+	}
+
+	.card__img {
+		max-width: 100%;
+	}
+
+	.card__content {
+		border-radius: 0 0 10px 10px;
+		padding: 24px 17px 66px;
+	}
+
+	.card__content__options__option:nth-child(2) {
+		margin-right: 15px;
+		margin-bottom: 10px;
+	}
+
+	.card__content__description,
+	.card__content__header__type {
+		font-size: 13px;
+		line-height: 16px;
+	}
+
+	.card__button {
+		padding-left: 33px;
+		padding-right: 33px;
+	}
+
+	.listing__nav {
+		margin: 70px 0 90px;
+	}
+
+}
+
+@media (min-width: 320px) {
+
+	.filter__main {
+		padding: 25px 65px;
+	}
+
+	.card__button {
+		padding-left: 43px;
+		padding-right: 43px;
+	}
+}
+
+
+
+@media (min-width: 428px) {
+
+	.filter__main {
+		padding: 25px 65px;
+	}
+
+	.card__content {
+		padding: 24px 37px 66px;
+	}
+
+}
+
+@media (min-width: 460px) {
+
+	.filter__main {
+		padding: 25px 35px;
+	}
+
+}
+
+@media (min-width: 650px) {
+
+	.filter__main__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.filter__main__item {
+		width: calc(50% - 43px);
+	}
+
+	.filter__main__buttons {
+		width: calc(50% - 43px);
+	}
+
+	.card__content__options__option:nth-child(2) {
+		margin-right: 5px;
+	}
+
+	.listing__nav {
+		margin: 70px 0 150px;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	.card {
+		flex-direction: row;
+		margin-bottom: 20px;
+	}
+
+	.card__imgWrap {
+		border-radius: 10px 0 0 10px;
+	}
+
+	.card__img {
+		left: -125px;
+		max-width: unset;
+		max-height: 100%;
+		position: absolute;
+	}
+
+	.card__content {
+		padding: 27px 33px 57px 43px;
+		border-radius: 0 10px 10px 0;
+	}
+
+	.card__content__description,
+	.card__content__header__type {
+		font-size: 12px;
+		line-height: 15px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.excursions__main {
+		flex-direction: row;
+		margin-bottom: 80px;
+	}
+
+	.filter__main {
+		order: unset;
+		min-width: 295px;
+	}
+
+	.filter__main__content {
+		display: block;
+	}
+
+	.filter__main__buttons,
+	.filter__main__item {
+		width: 100%;
+	}
+
+	.card__imgWrap {
+		min-width: 0;
+	}
+
+	.excursions__content__listing__nav {
+		margin: 20px 0 0;
+	}
+
+}
+
+
+@media (min-width: 1440px) {
+
+	.card__imgWrap {
+		min-width: 238px;
+	}
+
+	.card__content {
+		padding: 27px 45px;
+	}
+
+	.card__content__options__option:nth-child(2) {
+		margin-right: 35px;
+	}
+}

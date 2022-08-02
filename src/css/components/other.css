@@ -1,0 +1,471 @@
+/* ********* ********* HEADER SOCIALS ********* ********* */
+
+
+.socials__icon {
+	width: 30px;
+	height: 30px;
+	transition: .2s;
+}
+
+.facebook-icon {
+	fill: none;
+}
+
+.header__vk-icon,
+.header__inst-icon {
+	fill: #FFFFFF;
+}
+
+.header__facebook-icon {
+	stroke: #FFFFFF;
+}
+
+.header__inst-icon {
+	margin: 8px 0;
+}
+
+.footer__vk-icon {
+	fill: #BC0000;
+}
+
+.footer__inst-icon {
+	fill: #E59B06;
+}
+
+.footer__facebook-icon {
+	stroke: #17C1BC;
+}
+
+
+/* ********* ********* POPULAR TRIPS ********* ********* */
+
+
+.popularTrips {
+	margin: 0 0 0 var(--padding);
+	max-width: calc(100% - var(--padding));
+}
+
+.popularTrips__item {
+	position: relative;
+	margin-right: 20px;
+	width: 360px;
+	border-radius: 10px;
+	flex: 0 0 auto;
+	display: inline-flex;
+	overflow: hidden;
+}
+
+.popularTrips__item:last-child {
+	margin-right: 0;
+}
+
+.popularTrips__item:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+	z-index: 2;
+	transition: .4s;
+}
+
+.popularTrip__link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.popularTrip__img {
+	max-width: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	transition: .4s;
+	transform: scale(1.0);
+	will-change: transform;
+}
+
+.popularTrip__content {
+	position: absolute;
+	bottom: 0;
+	max-width: 100%;
+	height: 100%;
+	white-space: normal;
+	color: #FFFFFF;
+	font-size: 12px;
+	z-index: 3;
+}
+
+.popularTrip__heading {
+	padding-top: 2px;
+	font-size: 14px;
+}
+
+.popularTrip__characters {
+	padding: 10px 0 20px;
+}
+
+.popularTrip__characters__character {
+	padding-right: 13px;
+}
+
+.popularTrip__characters__character:last-child {
+	padding-right: 0;
+}
+
+.character__icon {
+	width: 15px;
+	aspect-ratio: 1;
+	vertical-align: middle;
+}
+
+.popularTrip__description {
+	line-height: 15px;
+}
+
+.popularTrip__button {
+	width: fit-content;
+}
+
+.popularTrips__controls {
+	margin: 0 0 0 var(--padding);
+}
+
+
+/* ********* ********* ABOUT ********* ********* */
+
+.about__imgWrap {
+	position: absolute;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.about__imgWrap:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+	border-radius: 10px;
+}
+
+.about__img {
+	height: 100%;
+	object-position: 0;
+	border-radius: 10px;
+}
+
+.about__content {
+	background-color: #EDEDED;
+	border-radius: 10px;
+	z-index: 1;
+	line-height: 17px;
+}
+
+
+/* ********* ********* TRIP TYPES ********* ********* */
+
+.tripTypes_type {
+	flex: 0 0 100%;
+	padding-bottom: 40px;
+}
+
+.tripsType__type__icon {
+	margin-right: 20px;
+	object-fit: contain;
+}
+
+.tripsType__type__content {
+	word-break: break-word;
+}
+
+.tripTypes__cta {
+	text-align: center;
+	width: 550px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.tripTypes__ctaText {
+	padding: 60px 0 40px;
+}
+
+
+/* ********* ********* REVIEWS ********* ********* */
+
+.reviews {
+	margin: 0 0 0 var(--padding);
+	max-width: calc(100% - var(--padding));
+}
+
+.review {
+	white-space: normal;
+	flex: 0 0;
+	padding: 38px 27px 39px 45px;
+	background: #EDEDED;
+	border-radius: 10px;
+	margin-right: 20px;
+	position: relative;
+}
+
+.review:last-child {
+	margin-right: 0;
+}
+
+.review__imgContainer {
+	margin-right: 28px;
+}
+
+.review__img {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.review__heading {
+	padding-bottom: 20px;
+	font-size: 14px;
+}
+
+.review__quotes {
+	position: absolute;
+	bottom: -60px;
+	right: 60px;
+	opacity: 0.4;
+	font-family: 'Marko One', serif;
+	font-size: 400px;
+	line-height: 670px;
+	transform: translateY(50%) rotate(16.66deg);
+}
+
+.reviews__controls {
+	margin: 0 0 0 var(--padding);
+}
+
+/* ********* ********* HOVERS ********* ********* */
+
+.header__socials__vk:hover .header__vk-icon {
+	fill: #BC0000;
+}
+
+.header__socials__inst:hover .header__inst-icon {
+	fill: #E59B06;
+}
+
+.header__socials__facebook:hover .header__facebook-icon {
+	stroke: #17C1BC;
+}
+
+.footer__socials__vk:hover .header__vk-icon {
+	fill: #BC0000;
+}
+
+.footer__socials__inst:hover .header__inst-icon {
+	fill: #E59B06;
+}
+
+.footer__socials__facebook:hover .header__facebook-icon {
+	stroke: #17C1BC;
+}
+
+.popularTrips__item:hover:before {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.popularTrips__item:hover .popularTrip__img {
+	transform: scale(1.02);
+}
+
+
+/* ********* ********* MEDIA ********* ********* */
+@media (min-width: 0) {
+
+	.popularTrips__item {
+		width: 280px;
+		height: 540px;
+	}
+
+	.popularTrip__content {
+		padding: 182px 15px 30px;
+	}
+
+	.index__about {
+		height: 704px;
+	}
+
+	.about__imgWrap {
+		right: calc(100px + var(--padding));
+	}
+
+	.about__img {
+		width: 768px;
+		object-position: 162px;
+		object-fit: contain;
+	}
+
+	.about__content {
+		width: 100%;
+		padding: 43px;
+	}
+
+	.h2--additional.about__heading {
+		padding-bottom: 20px;
+	}
+
+	.about__content p:first-child {
+		padding-bottom: 10px;
+	}
+
+	.review {
+		flex-basis: calc((100% - var(--padding))*0.737);
+		flex-wrap: wrap;
+	}
+
+	.review__imgContainer {
+		flex: 0 0 80px;
+		margin-bottom: 20px;
+		aspect-ratio: 1;
+	}
+
+	.review__text {
+		font-size: 12px;
+	}
+
+}
+
+@media (min-width: 460px) {}
+
+@media (min-width: 576px) {
+
+	.popularTrip__content {
+		padding: 174px 15px 30px;
+	}
+
+	.popularTrips__item {
+		width: 295px;
+		height: 490px;
+	}
+
+	.about__imgWrap {
+		right: calc(185px + var(--padding));
+	}
+
+	.about__img {
+		object-position: 40px;
+		object-fit: cover;
+	}
+
+	.about__content {
+		width: 493px;
+		padding: 61px 55px;
+	}
+
+	.h2--additional.about__heading {
+		padding-bottom: 40px;
+	}
+
+	.about__content p:first-of-type {
+		padding-bottom: 20px;
+	}
+}
+
+@media (min-width: 730px) {
+
+	.index__about {
+		height: 749px;
+	}
+
+	.review {
+		flex-basis: calc((100% - var(--padding))*0.828);
+		flex-wrap: nowrap;
+	}
+
+	.review__imgContainer {
+		flex: 0 0 168px;
+		margin-bottom: 0;
+	}
+
+}
+
+@media (min-width: 769px) {
+
+	.popularTrips__item {
+		width: 360px;
+		height: 497px;
+	}
+
+	.popularTrip__content {
+		padding: 211px 16px 42px;
+	}
+
+	.about__imgWrap {
+		right: calc(209px + var(--padding));
+	}
+
+	.about__img {
+		object-position: 0;
+		width: 1131px;
+	}
+
+	.about__content {
+		width: 542px;
+		padding: 61px 75px 105px 85px;
+	}
+
+	.tripTypes_type {
+		flex: 0 0 50%;
+	}
+
+	.canionTrip,
+	.yachtTrip {
+		order: 1;
+	}
+
+	.yachtTrip,
+	.busTrip {
+		padding-right: 10px;
+	}
+
+	.canionTrip,
+	.carTrip {
+		padding-left: 10px;
+	}
+
+}
+
+@media (min-width: 1024px) {
+
+	.review__imgContainer {
+		flex: 0 0 245px;
+	}
+
+	.review__text {
+		font-size: 100%;
+	}
+
+	.review__quotes {
+		font-size: 500px;
+	}
+
+}
+
+@media (min-width: 1220px) {
+
+	.review {
+		flex-basis: calc((100% - var(--padding))*0.661);
+	}
+
+}
+
+@media (min-width: 1441px) {
+
+	.about__imgWrap {
+		right: 35%;
+	}
+
+	.about__content {
+		width: 50%;
+	}
+
+}

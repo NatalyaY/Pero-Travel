@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pero travel</title>
+    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Marko+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <svg style="display:none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs></defs>
+        <symbol id="vk" viewBox="0 0 32 32" width="32px" height="32px">
+            <path
+                d="M28.89 22C27.7066 20.137 26.3215 18.4099 24.76 16.85C24.7316 16.8145 24.7162 16.7704 24.7162 16.725C24.7162 16.6796 24.7316 16.6355 24.76 16.6C26.1037 14.766 27.2912 12.8225 28.31 10.79C28.4574 10.4992 28.5275 10.1753 28.5135 9.84953C28.4995 9.52378 28.4019 9.20711 28.23 8.93C28.0733 8.64835 27.8443 8.41365 27.5665 8.25015C27.2887 8.08666 26.9724 8.0003 26.65 8H23.65C23.2694 8.00738 22.8987 8.12329 22.5816 8.33409C22.2645 8.54489 22.0142 8.84183 21.86 9.19C20.9887 11.1172 19.9444 12.9614 18.74 14.7V9.8C18.7414 9.56325 18.6957 9.32859 18.6057 9.1096C18.5157 8.89062 18.3832 8.69166 18.2158 8.52425C18.0484 8.35684 17.8494 8.2243 17.6304 8.13431C17.4115 8.04432 17.1768 7.99867 16.94 8H12.56C12.3051 8.00396 12.056 8.0775 11.8398 8.21266C11.6235 8.34783 11.4483 8.53949 11.333 8.76696C11.2177 8.99443 11.1668 9.24906 11.1856 9.50338C11.2045 9.75769 11.2925 10.002 11.44 10.21L11.84 10.77C12.0546 11.0781 12.1698 11.4445 12.17 11.82V15.66C10.85 13.7071 9.80045 11.5845 9.05005 9.35C8.91473 8.95624 8.6599 8.61453 8.3211 8.37253C7.98229 8.13053 7.57641 8.00029 7.16005 8H4.71005C4.44973 8.00311 4.19347 8.06493 3.96037 8.18086C3.72727 8.29678 3.52334 8.46382 3.36378 8.66953C3.20421 8.87523 3.09313 9.11429 3.03881 9.3689C2.98449 9.6235 2.98833 9.88708 3.05005 10.14C4.40005 15.87 7.23005 20.62 10.82 23.14C11.0352 23.2928 11.3021 23.3544 11.5624 23.3114C11.8228 23.2683 12.0556 23.124 12.21 22.91C12.2873 22.8031 12.3426 22.682 12.3729 22.5537C12.4031 22.4253 12.4077 22.2923 12.3863 22.1621C12.3649 22.032 12.318 21.9074 12.2483 21.7955C12.1786 21.6836 12.0874 21.5865 11.98 21.51C8.84005 19.31 6.34005 15.12 5.07005 10H7.17005C8.09028 12.7959 9.47647 15.4161 11.27 17.75C11.4773 18.0149 11.7628 18.2077 12.086 18.301C12.4091 18.3944 12.7534 18.3835 13.07 18.27C13.3949 18.1567 13.6759 17.9442 13.8733 17.6625C14.0707 17.3807 14.1745 17.044 14.17 16.7V11.82C14.1722 11.1843 14.014 10.5583 13.71 10H16.71V15.43C16.7065 15.8185 16.8308 16.1975 17.064 16.5083C17.2971 16.8191 17.626 17.0446 18 17.15C18.3629 17.2708 18.7554 17.2686 19.117 17.1439C19.4785 17.0192 19.7888 16.7788 20 16.46C21.4204 14.4336 22.6332 12.2694 23.62 10H26.42C25.4669 11.8741 24.3668 13.6697 23.13 15.37C22.8182 15.7872 22.6668 16.3026 22.7035 16.8222C22.7402 17.3418 22.9626 17.8308 23.33 18.2C24.7886 19.6697 26.1014 21.2772 27.25 23H23.9C22.8666 21.2893 21.4788 19.8197 19.83 18.69C19.5827 18.5087 19.2894 18.4005 18.9836 18.3775C18.6778 18.3545 18.3717 18.4178 18.1 18.56C17.8207 18.703 17.5867 18.9209 17.4242 19.1893C17.2617 19.4578 17.1772 19.7662 17.18 20.08V22.46C17.1855 22.5989 17.1362 22.7345 17.0426 22.8373C16.9491 22.9402 16.8189 23.0022 16.68 23.01H15.82C15.5548 23.01 15.3005 23.1154 15.1129 23.3029C14.9254 23.4904 14.82 23.7448 14.82 24.01C14.82 24.2752 14.9254 24.5296 15.1129 24.7171C15.3005 24.9046 15.5548 25.01 15.82 25.01H16.68C17.0118 25.0074 17.3398 24.9393 17.6452 24.8096C17.9506 24.6799 18.2274 24.4912 18.4597 24.2543C18.692 24.0173 18.8752 23.7369 18.9988 23.429C19.1224 23.1211 19.184 22.7918 19.18 22.46V20.69C20.383 21.5948 21.4013 22.7218 22.18 24.01C22.352 24.3079 22.5978 24.5565 22.8939 24.7317C23.1899 24.9069 23.5261 25.0027 23.87 25.01H27.25C27.5957 25.0109 27.9351 24.9184 28.2326 24.7424C28.53 24.5664 28.7744 24.3134 28.94 24.01C29.1099 23.7004 29.1948 23.3513 29.186 22.9983C29.1772 22.6452 29.0751 22.3008 28.89 22Z" />
+        </symbol>
+        <symbol id="inst" viewBox="0 0 32 32" width="32px" height="32px">
+            <path
+                d="M15.9971 2.34668C12.289 2.34668 11.8241 2.3624 10.3678 2.42884C8.91457 2.49518 7.92206 2.72595 7.05356 3.06349C6.15574 3.41241 5.39433 3.87926 4.6353 4.63828C3.87627 5.39731 3.40942 6.15872 3.0605 7.05654C2.72297 7.92499 2.4922 8.9175 2.42586 10.3707C2.35941 11.827 2.34375 12.292 2.34375 16C2.34375 19.708 2.35941 20.1729 2.42586 21.6292C2.4922 23.0824 2.72297 24.0749 3.0605 24.9434C3.40942 25.8412 3.87627 26.6026 4.6353 27.3617C5.39433 28.1207 6.15574 28.5876 7.05356 28.9365C7.92206 29.274 8.91457 29.5048 10.3678 29.5711C11.8241 29.6375 12.289 29.6533 15.9971 29.6533C19.705 29.6533 20.17 29.6375 21.6263 29.5711C23.0795 29.5048 24.072 29.274 24.9405 28.9365C25.8383 28.5876 26.5997 28.1207 27.3588 27.3617C28.1178 26.6026 28.5847 25.8412 28.9336 24.9434C29.2711 24.0749 29.5019 23.0824 29.5682 21.6292C29.6346 20.1729 29.6503 19.708 29.6503 16C29.6503 12.292 29.6346 11.827 29.5682 10.3707C29.5019 8.9175 29.2711 7.92499 28.9336 7.05654C28.5847 6.15872 28.1178 5.39731 27.3588 4.63828C26.5997 3.87926 25.8383 3.41241 24.9405 3.06349C24.072 2.72595 23.0795 2.49518 21.6263 2.42884C20.17 2.3624 19.705 2.34668 15.9971 2.34668ZM15.9971 4.80678C19.6426 4.80678 20.0745 4.82066 21.5141 4.88634C22.8453 4.9471 23.5683 5.16952 24.0494 5.35645C24.6867 5.60412 25.1415 5.90004 25.6192 6.37778C26.097 6.85553 26.3929 7.3104 26.6406 7.94765C26.8275 8.42875 27.05 9.15169 27.1107 10.4829C27.1763 11.9226 27.1903 12.3544 27.1903 16C27.1903 19.6455 27.1763 20.0774 27.1107 21.5171C27.05 22.8482 26.8275 23.5712 26.6406 24.0523C26.3929 24.6896 26.097 25.1444 25.6192 25.6222C25.1415 26.0999 24.6867 26.3958 24.0494 26.6435C23.5683 26.8305 22.8453 27.0529 21.5141 27.1136C20.0747 27.1793 19.6429 27.1932 15.9971 27.1932C12.3512 27.1932 11.9195 27.1793 10.4799 27.1136C9.14876 27.0529 8.42582 26.8305 7.94472 26.6435C7.30742 26.3958 6.8526 26.0999 6.3748 25.6222C5.89706 25.1444 5.60114 24.6896 5.35352 24.0523C5.16654 23.5712 4.94411 22.8482 4.88336 21.5171C4.81767 20.0774 4.8038 19.6455 4.8038 16C4.8038 12.3544 4.81767 11.9226 4.88336 10.4829C4.94411 9.15169 5.16654 8.42875 5.35352 7.94765C5.60114 7.3104 5.89706 6.85553 6.3748 6.37778C6.8526 5.90004 7.30742 5.60412 7.94472 5.35645C8.42582 5.16952 9.14876 4.9471 10.4799 4.88634C11.9196 4.82066 12.3515 4.80678 15.9971 4.80678Z" />
+            <path
+                d="M15.9955 20.551C13.482 20.551 11.4444 18.5134 11.4444 15.9999C11.4444 13.4864 13.482 11.4488 15.9955 11.4488C18.509 11.4488 20.5466 13.4864 20.5466 15.9999C20.5466 18.5134 18.509 20.551 15.9955 20.551ZM15.9955 8.98877C12.1233 8.98877 8.98438 12.1277 8.98438 15.9999C8.98438 19.8721 12.1233 23.0111 15.9955 23.0111C19.8677 23.0111 23.0067 19.8721 23.0067 15.9999C23.0067 12.1277 19.8677 8.98877 15.9955 8.98877Z" />
+            <path
+                d="M24.9252 8.71186C24.9252 9.61673 24.1917 10.3502 23.2868 10.3502C22.382 10.3502 21.6484 9.61673 21.6484 8.71186C21.6484 7.80699 22.382 7.07349 23.2868 7.07349C24.1917 7.07349 24.9252 7.80699 24.9252 8.71186Z" />
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 32 32" width="32px" height="32px">
+            <path
+                d="M21.3715 11.724C21.3836 11.606 21.2911 11.5035 21.1725 11.5035H17.3486V8.8503C17.3486 7.85389 18.009 7.62158 18.4742 7.62158C18.8565 7.62158 20.5467 7.62158 21.1301 7.62158C21.2406 7.62158 21.329 7.53204 21.329 7.42158V3.44037C21.329 3.33021 21.2399 3.2408 21.1298 3.24037L17.3973 3.2258C13.0327 3.2258 12.0395 6.49287 12.0395 8.5836V11.5035H9.71538C9.60492 11.5035 9.51538 11.5931 9.51538 11.7035V15.8173C9.51538 15.9278 9.60492 16.0173 9.71538 16.0173H12.0395C12.0395 21.2364 12.0395 27.4188 12.0395 28.5923C12.0395 28.7028 12.129 28.7898 12.2395 28.7898H17.1486C17.2591 28.7898 17.3486 28.7026 17.3486 28.5922C17.3486 27.4125 17.3486 21.1768 17.3486 16.0173H20.7505C20.8531 16.0173 20.939 15.9398 20.9495 15.8377L21.3715 11.724Z"
+                stroke-width="2" />
+        </symbol>
+        <symbol id="time" viewBox="0 0 12 12" width="12px" height="12px">
+            <path
+                d="M6 11.625C4.88748 11.625 3.79995 11.2951 2.87492 10.677C1.94989 10.0589 1.22892 9.18043 0.80318 8.1526C0.377437 7.12476 0.266043 5.99376 0.483085 4.90262C0.700127 3.81148 1.23586 2.8092 2.02253 2.02253C2.8092 1.23586 3.81148 0.700127 4.90262 0.483085C5.99376 0.266043 7.12476 0.377437 8.1526 0.80318C9.18043 1.22892 10.0589 1.94989 10.677 2.87492C11.2951 3.79995 11.625 4.88748 11.625 6C11.625 7.49184 11.0324 8.92259 9.97748 9.97748C8.92259 11.0324 7.49184 11.625 6 11.625ZM6 1.125C5.03582 1.125 4.09329 1.41092 3.2916 1.94659C2.48991 2.48226 1.86507 3.24363 1.49609 4.13442C1.12711 5.02521 1.03057 6.00541 1.21867 6.95107C1.40678 7.89673 1.87108 8.76537 2.55286 9.44715C3.23464 10.1289 4.10328 10.5932 5.04894 10.7813C5.99459 10.9694 6.97479 10.8729 7.86558 10.5039C8.75637 10.1349 9.51775 9.5101 10.0534 8.70841C10.5891 7.90672 10.875 6.96419 10.875 6C10.875 4.70707 10.3614 3.4671 9.44715 2.55286C8.53291 1.63862 7.29293 1.125 6 1.125Z"
+                fill="white" />
+            <path
+                d="M7.59001 8.1225L5.73376 6.26625C5.699 6.23121 5.6715 6.18965 5.65284 6.14397C5.63418 6.09828 5.62472 6.04935 5.62501 6V3H6.37501V5.84625L8.12251 7.59L7.59001 8.1225Z"
+                fill="white" />
+        </symbol>
+        <symbol id="cost" viewBox="0 0 15 15" width="15px" height="15px" fill="none">
+            <path
+                d="M9.70012 4.41997C11.4012 4.41997 12.7801 3.92748 12.7801 3.31997C12.7801 2.71246 11.4012 2.21997 9.70012 2.21997C7.99908 2.21997 6.62012 2.71246 6.62012 3.31997C6.62012 3.92748 7.99908 4.41997 9.70012 4.41997Z"
+                stroke="white" stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M6.62012 3.54004C6.62012 3.74068 6.62012 4.6594 6.62012 4.86004C6.62012 5.46746 7.99864 5.96004 9.70012 5.96004C11.4016 5.96004 12.7801 5.46746 12.7801 4.86004C12.7801 4.6594 12.7801 3.74068 12.7801 3.54004"
+                stroke="white" stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M8.28101 7.37654C8.70561 7.4553 9.18829 7.49996 9.70001 7.49996C11.4015 7.49996 12.78 7.00738 12.78 6.39996C12.78 6.19932 12.78 5.2806 12.78 5.07996"
+                stroke="white" stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M6.62012 5.07996C6.62012 5.2806 6.62012 6.01936 6.62012 6.01936" stroke="white" stroke-width="0.6"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M8.3855 8.93505C8.78414 9.00237 9.22964 9.03999 9.7 9.03999C11.4015 9.03999 12.78 8.54763 12.78 7.93999C12.78 7.73935 12.78 6.82064 12.78 6.62"
+                stroke="white" stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M8.36865 10.4722C8.77147 10.5413 9.22313 10.58 9.70009 10.58C11.4016 10.58 12.7801 10.0877 12.7801 9.48003C12.7801 9.27939 12.7801 8.36067 12.7801 8.16003"
+                stroke="white" stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M5.29997 8.15996C7.00101 8.15996 8.37997 7.66747 8.37997 7.05996C8.37997 6.45245 7.00101 5.95996 5.29997 5.95996C3.59893 5.95996 2.21997 6.45245 2.21997 7.05996C2.21997 7.66747 3.59893 8.15996 5.29997 8.15996Z"
+                stroke="white" stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M2.21997 7.28003C2.21997 7.48067 2.21997 8.39939 2.21997 8.60003C2.21997 9.20767 3.59849 9.70003 5.29997 9.70003C7.00145 9.70003 8.37997 9.20767 8.37997 8.60003C8.37997 8.39939 8.37997 7.48067 8.37997 7.28003"
+                stroke="white" stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M2.21997 8.81995C2.21997 9.02059 2.21997 9.93931 2.21997 10.1399C2.21997 10.7476 3.59849 11.2399 5.29997 11.2399C7.00145 11.2399 8.37997 10.7476 8.37997 10.1399C8.37997 9.93931 8.37997 9.02059 8.37997 8.81995"
+                stroke="white" stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path
+                d="M2.21997 10.36C2.21997 10.5606 2.21997 11.4793 2.21997 11.68C2.21997 12.2876 3.59849 12.78 5.29997 12.78C7.00145 12.78 8.37997 12.2876 8.37997 11.68C8.37997 11.4793 8.37997 10.5606 8.37997 10.36"
+                stroke="white" stroke-width="0.6" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="prev" viewBox="0 0 25 45" width="25px" height="45px">
+            <path d="M24 0.999999L2.49433 20.2655C1.16332 21.4579 1.16333 23.5421 2.49433 24.7345L24 44"
+                stroke-width="2" />
+        </symbol>
+        <symbol id="next" viewBox="0 0 25 45" width="25px" height="45px">
+            <path d="M1 0.999999L22.5057 20.2655C23.8367 21.4579 23.8367 23.5421 22.5057 24.7345L0.999998 44"
+                stroke-width="2" />
+        </symbol>
+        <symbol id="wh" viewBox="0 0 19 19" width="20px" height="20px">
+            <path
+                d="M18.7774 9.37749C18.7737 10.9843 18.4248 12.4019 17.7198 13.7193C17.0555 14.9625 16.1389 15.9978 14.9848 16.8142C13.9717 17.5304 12.8621 18.0203 11.6487 18.2726C10.3053 18.5509 8.96195 18.5212 7.62972 18.2021C6.92464 18.0314 6.24925 17.7716 5.61468 17.4265C5.50706 17.3671 5.41429 17.3634 5.29925 17.4005C3.90023 17.8496 2.5012 18.2949 1.10218 18.7402C0.942607 18.7921 0.786748 18.8404 0.627178 18.8998C0.515849 18.9406 0.508428 18.8998 0.538115 18.807C0.701396 18.3283 0.860967 17.8496 1.02425 17.3671C1.37308 16.3244 1.7219 15.2816 2.07815 14.2425C2.1264 14.1052 2.05589 14.0162 2.00022 13.9197C1.56233 13.1589 1.25062 12.35 1.05765 11.4964C0.63831 9.65581 0.786748 7.8523 1.49183 6.10445C1.90003 5.09507 2.48265 4.1896 3.22855 3.38804C4.17855 2.36382 5.30296 1.6105 6.60179 1.10581C7.81526 0.634525 9.06956 0.452689 10.361 0.530619C12.1311 0.638236 13.7416 1.22456 15.1555 2.29331C16.985 3.67378 18.1354 5.48843 18.5955 7.74097C18.718 8.31617 18.7625 8.89878 18.7774 9.37749ZM9.74124 2.03355C9.39612 2.0187 8.99163 2.05953 8.58714 2.1189C8.42757 2.14117 8.27171 2.17456 8.11585 2.21538C5.70374 2.82769 3.97073 4.26753 2.95022 6.53492C2.36019 7.84488 2.20062 9.22906 2.42327 10.6466C2.59769 11.7673 3.01331 12.799 3.66272 13.7304C3.73323 13.8343 3.74437 13.9234 3.70355 14.0384C3.42894 14.8437 3.16175 15.6527 2.89085 16.4617C2.87601 16.5062 2.83148 16.5582 2.8723 16.599C2.91312 16.6435 2.96507 16.5953 3.0096 16.5804C3.8223 16.3207 4.63499 16.0646 5.44026 15.7937C5.62581 15.7306 5.75941 15.7603 5.91898 15.8568C7.74105 16.9515 9.68929 17.241 11.7414 16.6955C13.3 16.2835 14.584 15.4337 15.6008 14.1794C16.5842 12.966 17.1334 11.5781 17.2448 10.0269C17.3301 8.8357 17.1446 7.67788 16.6696 6.57203C16.0721 5.18042 15.1407 4.06714 13.8826 3.2396C12.6506 2.43062 11.2887 2.01499 9.74124 2.03355Z" />
+            <path
+                d="M5.3103 7.33275C5.32515 6.49779 5.65171 5.81126 6.28999 5.27689C6.47183 5.12474 6.69077 5.06165 6.93198 5.10247C7.03589 5.11732 7.14351 5.13216 7.2437 5.12103C7.49604 5.10247 7.64077 5.24349 7.7187 5.4513C7.9562 6.07474 8.18628 6.70189 8.42007 7.32533C8.4646 7.44408 8.45347 7.55169 8.3978 7.66302C8.25308 7.96361 8.023 8.1974 7.79292 8.43119C7.59253 8.63529 7.5814 8.70208 7.7187 8.95072C8.38296 10.1531 9.29956 11.0882 10.5687 11.656C10.6318 11.682 10.6875 11.7265 10.7468 11.7525C10.9064 11.8304 11.0511 11.823 11.1847 11.6857C11.4445 11.4222 11.6857 11.1402 11.9195 10.8507C12.1013 10.6244 12.1867 10.591 12.4427 10.706C13.0662 10.9954 13.6599 11.3331 14.2648 11.6597C14.4652 11.7673 14.4875 11.9158 14.4578 12.1867C14.3353 13.2888 13.4929 13.7898 12.5318 13.9494C12.2089 14.0013 11.9046 13.9716 11.6003 13.8751C10.7097 13.5931 9.83394 13.2665 9.04722 12.7544C8.31245 12.2757 7.68159 11.6783 7.12866 10.9992C6.59058 10.3349 6.11187 9.63353 5.71479 8.87279C5.49214 8.43861 5.3103 7.76322 5.3103 7.33275Z" />
+        </symbol>
+        <symbol id="tg" viewBox="0 0 19 19" width="20px" height="20px">
+            <path
+                d="M18.6643 4.02291L16.0343 16.4259C15.8359 17.3013 15.3184 17.519 14.5831 17.1068L10.5759 14.1538L8.64242 16.0135C8.42848 16.2274 8.24945 16.4065 7.83707 16.4065L8.12496 12.3253L15.5519 5.61413C15.8748 5.32623 15.4819 5.1667 15.05 5.45463L5.86848 11.2359L1.91574 9.99874C1.05594 9.73026 1.04043 9.13889 2.09469 8.72655L17.5554 2.77022C18.2712 2.50178 18.8976 2.92967 18.6643 4.02291Z"
+                stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="mail" viewBox="0 0 19 19" width="20px" height="20px">
+            <g clip-path="url(#clip0_19_387)">
+                <path
+                    d="M17.327 4.72464C17.292 4.67775 17.2482 4.6382 17.1979 4.60827C17.1476 4.57834 17.092 4.5586 17.0341 4.55019C16.9762 4.54178 16.9172 4.54486 16.8605 4.55926C16.8038 4.57366 16.7505 4.59909 16.7036 4.6341L9.52069 9.99566C9.49499 10.0149 9.46374 10.0253 9.43163 10.0253C9.39951 10.0253 9.36826 10.0149 9.34256 9.99566L2.30069 4.61035C2.2542 4.57487 2.20117 4.5489 2.14465 4.53391C2.08812 4.51893 2.02919 4.51522 1.97123 4.52301C1.91327 4.5308 1.85741 4.54992 1.80684 4.5793C1.75627 4.60868 1.71199 4.64772 1.67651 4.69421C1.64103 4.74071 1.61506 4.79373 1.60007 4.85026C1.58509 4.90679 1.58138 4.96571 1.58917 5.02367C1.59696 5.08163 1.61609 5.13749 1.64546 5.18806C1.67484 5.23863 1.71389 5.28292 1.76038 5.31839L7.29709 9.55332L1.82124 13.6799C1.77406 13.7151 1.73428 13.7592 1.70416 13.8098C1.67405 13.8603 1.65418 13.9163 1.6457 13.9745C1.63723 14.0328 1.6403 14.0921 1.65476 14.1492C1.66921 14.2062 1.69476 14.2599 1.72995 14.307C1.76513 14.3542 1.80926 14.394 1.85982 14.4241C1.91038 14.4542 1.96638 14.4741 2.02461 14.4826C2.08285 14.491 2.14219 14.488 2.19923 14.4735C2.25628 14.4591 2.30992 14.4335 2.3571 14.3983L8.03186 10.1144L8.80077 10.7082C8.98005 10.8454 9.19916 10.9205 9.42494 10.9221C9.65072 10.9237 9.87087 10.8517 10.0521 10.7171L10.8596 10.1144L16.6012 14.3983C16.648 14.4333 16.7014 14.4587 16.7581 14.4731C16.8148 14.4875 16.8737 14.4906 16.9316 14.4822C16.9895 14.4738 17.0452 14.454 17.0955 14.4241C17.1457 14.3942 17.1896 14.3547 17.2246 14.3078C17.2596 14.2609 17.285 14.2076 17.2994 14.1509C17.3138 14.0942 17.3168 14.0352 17.3084 13.9773C17.3 13.9194 17.2803 13.8637 17.2504 13.8135C17.2205 13.7632 17.1809 13.7193 17.134 13.6843L11.6033 9.55183L17.2365 5.34363C17.3299 5.27307 17.3918 5.16856 17.4087 5.05271C17.4257 4.93687 17.3963 4.81901 17.327 4.72464Z" />
+                <path
+                    d="M16.7734 2.82031H2.22656C1.63604 2.82031 1.06971 3.0549 0.652145 3.47246C0.234584 3.89002 0 4.45635 0 5.04688L0 13.9531C0 14.5436 0.234584 15.11 0.652145 15.5275C1.06971 15.9451 1.63604 16.1797 2.22656 16.1797H16.7734C17.364 16.1797 17.9303 15.9451 18.3479 15.5275C18.7654 15.11 19 14.5436 19 13.9531V5.04688C19 4.45635 18.7654 3.89002 18.3479 3.47246C17.9303 3.0549 17.364 2.82031 16.7734 2.82031ZM18.1094 13.9531C18.1094 14.3074 17.9686 14.6472 17.7181 14.8978C17.4676 15.1483 17.1278 15.2891 16.7734 15.2891H2.22656C1.87225 15.2891 1.53245 15.1483 1.28191 14.8978C1.03138 14.6472 0.890625 14.3074 0.890625 13.9531V5.04688C0.890625 4.69256 1.03138 4.35276 1.28191 4.10222C1.53245 3.85169 1.87225 3.71094 2.22656 3.71094H16.7734C17.1278 3.71094 17.4676 3.85169 17.7181 4.10222C17.9686 4.35276 18.1094 4.69256 18.1094 5.04688V13.9531Z"
+                    stroke-width="0.5" />
+            </g>
+            <defs>
+                <clipPath id="clip0_19_387">
+                    <rect width="19" height="19" fill="white" />
+                </clipPath>
+            </defs>
+        </symbol>
+
+    </svg>
+    <header class="header header--index">
+        <picture>
+            <source media="(min-width: 769px)" srcset="
+                    img/index-header/index-header_desk_1_x4imnh_c_scale,w_769.webp 769w,
+                    img/index-header/index-header_desk_1_x4imnh_c_scale,w_1396.webp 1396w,
+                    img/index-header/index-header_desk_1_x4imnh_c_scale,w_1815.webp 1815w,
+                    img/index-header/index-header_desk_1_x4imnh_c_scale,w_2235.webp 2235w,
+                    img/index-header/index-header_desk_1_x4imnh_c_scale,w_2880.webp 2880w">
+            <source media="(min-width: 576px)" srcset="
+                    img/index-header/index-header_tablet_cx5cxj_c_scale,w_576.webp 576w,
+                    img/index-header/index-header_tablet_cx5cxj_c_scale,w_1122.webp 1122w,
+                    img/index-header/index-header_tablet_cx5cxj_c_scale,w_1536.webp 1536w">
+            <source srcset="
+                    img/index-header/index-header_mobile_ddx9ye_c_scale,w_280.webp 280w,
+                    img/index-header/index-header_mobile_ddx9ye_c_scale,w_667.webp 667w,
+                    img/index-header/index-header_mobile_ddx9ye_c_scale,w_856.webp 856w">
+            <img src="img/index-header/index-header_desk_1_x4imnh_c_scale,w_2880.webp" alt="Pero Travel"
+                class="header__bg">
+        </picture>
+        <nav class="nav">
+            <div class="container d-flex j-between align-center">
+                <a href="index.html" class="nav__logo--link link">
+                    <img src="img/icons/logo_white.png" alt="Logo" class="nav__logo">
+                </a>
+                <input type="checkbox" id="menu--mobile" class="nav__menu--mobile__checkbox">
+                <label for="menu--mobile" class="nav__menu--mobile__burger"></label>
+                <div class="nav__menu">
+                    <ul class="d-flex">
+                        <li class="nav__menu__item">
+                            <a href="index.html" class="nav__menu__link active link--main link">Главная</a>
+                        </li>
+                        <li class="nav__menu__item">
+                            <a href="excursions.html" class="nav__menu__link link--main link">Экскурсии</a>
+                        </li>
+                        <li class="nav__menu__item">
+                            <a href="#" class="nav__menu__link link--main link">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="header__content header__content--index">
+            <div class="container d-flex j-between flex-col--mob">
+                <div class="header__heading">
+                    <h1 class="pageHeading--standart header__heading__mainPageHeading">путешествуй <span
+                            class="header__heading--contrast">вместе с</span></h1>
+                    <p class="pageHeading--brand">pero travel</p>
+                    <a href="excursions.html" class="button buton--big buton--rounded-big header__button link--main">К
+                        экскурсиям <div class="button__arrow"></div></a>
+                </div>
+                <div class="header__socials d-flex flex-col j-center align-end">
+                    <a href="#" class="header__socials__vk">
+                        <svg class="vk-icon header__vk-icon socials__icon">
+                            <use href="#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header__socials__inst">
+                        <svg class="inst-icon header__inst-icon socials__icon">
+                            <use href="#inst"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header__socials__facebook">
+                        <svg class="facebook-icon header__facebook-icon socials__icon">
+                            <use href="#facebook"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="header__video paused gallery">
+            <article class="video-wrap video" data-id="video1">
+                <div class="video__btn"></div>
+                <img srcset="
+                            img/index-header__video/index-header_video%401x.webp 1x,
+                            img/index-header__video/index-header_video%402x.webp 2x"
+                    src="img/index-header__video/index-header_video%402x.webp" alt="Video" class="video__poster">
+            </article>
+            <article class="video-wrap video" data-id="video2">
+                <div class="video__btn"></div>
+                <img srcset="
+                            img/index-header__video/index-header_video2%401x.webp 1x,
+                            img/index-header__video/index-header_video2%402x.webp 2x"
+                    src="img/index-header__video/index-header_video2%402x.webp" alt="Video" class="video__poster">
+            </article>
+            <article class="video-wrap video" data-id="video3">
+                <div class="video__btn"></div>
+                <img srcset="
+                           img/index-header__video/index-header_video3%401x.webp 1x,
+                            img/index-header__video/index-header_video3%402x.webp 2x"
+                    src="img/index-header__video/index-header_video3%402x.webp" alt="Video" class="video__poster">
+            </article>
+            <article class="video-wrap video" data-id="video4">
+                <div class="video__btn"></div>
+                <img srcset="
+                            img/index-header__video/index-header_video4%401x.webp 1x,
+                            img/index-header__video/index-header_video4%402x.webp 2x"
+                    src="img/index-header__video/index-header_video4%402x.webp" alt="Video" class="video__poster">
+            </article>
+            <article class="video-wrap video" data-id="video5">
+                <div class="video__btn"></div>
+                <img srcset="
+                            img/index-header__video/index-header_video5%401x.webp 1x,
+                            img/index-header__video/index-header_video5%402x.webp 2x"
+                    src="img/index-header__video/index-header_video5%402x.webp" alt="Video" class="video__poster">
+            </article>
+            <article class="video-wrap video" data-id="video6">
+                <div class="video__btn"></div>
+                <img srcset="
+                            img/index-header__video/index-header_video6%401x.webp 1x,
+                            img/index-header__video/index-header_video6%402x.webp 2x"
+                    src="img/index-header__video/index-header_video6%402x.webp" alt="Video" class="video__poster">
+            </article>
+        </section>
+        <template id="bigVideoContainer">
+            <div id="videoContainer">
+                <div class="videoContainer_content">
+                    <div class="videoContainer_wrap">
+                        <section class="video__layer">
+                            <div class="btn__layer">
+                                <div class="video__btn"></div>
+                            </div>
+                            <video class="video__content" preload="auto">
+                                <source src="video/id.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                <source src="video/id.webm" type='video/webm; codecs="vp8, vorbis"'>
+                                <source src="video/id.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                            </video>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </header>
+    <main>
+        <section class="section--main">
+            <div class="container">
+                <div class="wrap h2--main d-flex j-between align-center">
+                    <h2>Популярные экскурсии</h2>
+                    <a href="excursions.html" class="link link--viewAll flex0">Смотреть все</a>
+                </div>
+            </div>
+            <div class="popularTrips gallery">
+                <article class="popularTrips__item">
+                    <img src="img/index-popTrips/index-popTrip1__2x.webp" srcset="
+                            img/index-popTrips/index-popTrip1__1x.webp 1x,
+                            img/index-popTrips/index-popTrip1__2x.webp 2x" alt="" class="popularTrip__img">
+                    <div class="d-flex flex-col j-between popularTrip__content">
+                        <header class="popularTrip__header">
+                            <span class="popularTrip__type">Автобусный тур</span>
+                            <h4 class="popularTrip__heading bold contrast">Обзорная по Сочи (из Адлера)</h4>
+                            <div class="popularTrip__characters d-flex">
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#time"></use>
+                                    </svg>
+                                    <span class="character__value">6 часов</span>
+                                </div>
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#cost"></use>
+                                    </svg>
+                                    <span class="character__value">618 ₽</span>
+                                </div>
+                            </div>
+                            <p class="popularTrip__description">Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                                Экскурсия начнется с подъёма на гору Большой Ахун - это высшая точка (665 метров) на
+                                побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная в 1935-36
+                                годах по проекту архитектора С. И. Воробьева...</p>
+                        </header>
+                        <a href="tripPage.html" class="popularTrip__link"></a>
+                        <a href="tripPage.html"
+                            class="button popularTrip__button buton--rounded-normal buton--normal link--main">Подробнее</a>
+                    </div>
+                </article>
+                <article class="popularTrips__item">
+                    <img src="img/index-popTrips/index-popTrip2__2x.webp" srcset="
+                            img/index-popTrips/index-popTrip2__1x.webp 1x,
+                            img/index-popTrips/index-popTrip2__2x.webp 2x" alt="" class="popularTrip__img">
+                    <div class="d-flex flex-col j-between popularTrip__content">
+                        <header class="popularTrip__header">
+                            <span class="popularTrip__type">Конный тур</span>
+                            <h4 class="popularTrip__heading bold contrast">Конные прогулки</h4>
+                            <div class="popularTrip__characters d-flex">
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#time"></use>
+                                    </svg>
+                                    <span class="character__value">1,5 часа</span>
+                                </div>
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#cost"></use>
+                                    </svg>
+                                    <span class="character__value">1 809 ₽</span>
+                                </div>
+                            </div>
+                            <p class="popularTrip__description">Конные прогулки проходят в Лазурной долине. С долины
+                                открывается красивый вид на море, горы и лес. На всем пути следования экскурсии вас
+                                будут сопровождать опытные инструктора. Катание на лошадях или иппотерапия очень полезна
+                                для детей и взрослых...</p>
+                        </header>
+                        <a href="tripPage.html" class="popularTrip__link"></a>
+                        <a href="tripPage.html"
+                            class="button popularTrip__button buton--rounded-normal buton--normal link--main">Подробнее</a>
+                    </div>
+                </article>
+                <article class="popularTrips__item">
+                    <img src="img/index-popTrips/index-popTrip3__2x.webp" srcset="
+                            img/index-popTrips/index-popTrip3__1x.webp 1x,
+                            img/index-popTrips/index-popTrip3__2x.webp 2x" alt="" class="popularTrip__img">
+                    <div class="d-flex flex-col j-between popularTrip__content">
+                        <header class="popularTrip__header">
+                            <span class="popularTrip__type">Квадротур</span>
+                            <h4 class="popularTrip__heading bold contrast">Пасть дракона</h4>
+                            <div class="popularTrip__characters d-flex">
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#time"></use>
+                                    </svg>
+                                    <span class="character__value">2,5 часа</span>
+                                </div>
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#cost"></use>
+                                    </svg>
+                                    <span class="character__value">3 515 ₽</span>
+                                </div>
+                            </div>
+                            <p class="popularTrip__description">Маршрут на Квадроциклах проходит по горной реке Мзымта
+                                вдоль белых скал и самшитовый лес к водопаду Глубокий Яр или "Пасть Дракона"
+                                (экскурсионное название). Высота водопада 41,5 метр - это один из самых высоких
+                                водопадов Большого Сочи...</p>
+                        </header>
+                        <a href="tripPage.html" class="popularTrip__link"></a>
+                        <a href="tripPage.html"
+                            class="button popularTrip__button buton--rounded-normal buton--normal link--main">Подробнее</a>
+                    </div>
+                </article>
+                <article class="popularTrips__item">
+                    <img src="img/index-popTrips/index-popTrip4__2x.webp" srcset="
+                            img/index-popTrips/index-popTrip4__1x.webp 1x,
+                            img/index-popTrips/index-popTrip4__2x.webp 2x" alt="" class="popularTrip__img">
+                    <div class="d-flex flex-col j-between popularTrip__content">
+                        <header class="popularTrip__header">
+                            <span class="popularTrip__type">Автобусный тур</span>
+                            <h4 class="popularTrip__heading bold contrast">Женский монастырь</h4>
+                            <div class="popularTrip__characters d-flex">
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#time"></use>
+                                    </svg>
+                                    <span class="character__value">4 часа</span>
+                                </div>
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#cost"></use>
+                                    </svg>
+                                    <span class="character__value">618 ₽</span>
+                                </div>
+                            </div>
+                            <p class="popularTrip__description">Троице - Георгиевский женский монастырь расположен в
+                                селе Лесное в живописном месте, в котором гармонично сочетаются красота природы и
+                                красота архитектуры сотворенная руками человека. Это удивительное место расположено
+                                совсем недалеко от Чёрного моря - всего в 20 километрах...</p>
+                        </header>
+                        <a href="tripPage.html" class="popularTrip__link"></a>
+                        <a href="tripPage.html"
+                            class="button popularTrip__button buton--rounded-normal buton--normal link--main">Подробнее</a>
+                    </div>
+                </article>
+                <article class="popularTrips__item">
+                    <img src="img/index-popTrips/index-popTrip1__2x.webp" srcset="
+                            img/index-popTrips/index-popTrip1__1x.webp 1x,
+                            img/index-popTrips/index-popTrip1__2x.webp 2x" alt="" class="popularTrip__img">
+                    <div class="d-flex flex-col j-between popularTrip__content">
+                        <header class="popularTrip__header">
+                            <span class="popularTrip__type">Автобусный тур</span>
+                            <h4 class="popularTrip__heading bold contrast">Обзорная по Сочи (из Адлера)</h4>
+                            <div class="popularTrip__characters d-flex">
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#time"></use>
+                                    </svg>
+                                    <span class="character__value">6 часов</span>
+                                </div>
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#cost"></use>
+                                    </svg>
+                                    <span class="character__value">618 ₽</span>
+                                </div>
+                            </div>
+                            <p class="popularTrip__description">Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                                Экскурсия начнется с подъёма на гору Большой Ахун - это высшая точка (665 метров) на
+                                побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная в 1935-36
+                                годах по проекту архитектора С. И. Воробьева...</p>
+                        </header>
+                        <a href="tripPage.html" class="popularTrip__link"></a>
+                        <a href="tripPage.html"
+                            class="button popularTrip__button buton--rounded-normal buton--normal link--main">Подробнее</a>
+                    </div>
+                </article>
+                <article class="popularTrips__item">
+                    <img src="img/index-popTrips/index-popTrip2__2x.webp" srcset="
+                            img/index-popTrips/index-popTrip2__1x.webp 1x,
+                            img/index-popTrips/index-popTrip2__2x.webp 2x" alt="" class="popularTrip__img">
+                    <div class="d-flex flex-col j-between popularTrip__content">
+                        <header class="popularTrip__header">
+                            <span class="popularTrip__type">Конный тур</span>
+                            <h4 class="popularTrip__heading bold contrast">Конные прогулки</h4>
+                            <div class="popularTrip__characters d-flex">
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#time"></use>
+                                    </svg>
+                                    <span class="character__value">1,5 часа</span>
+                                </div>
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#cost"></use>
+                                    </svg>
+                                    <span class="character__value">1 809 ₽</span>
+                                </div>
+                            </div>
+                            <p class="popularTrip__description">Конные прогулки проходят в Лазурной долине. С долины
+                                открывается красивый вид на море, горы и лес. На всем пути следования экскурсии вас
+                                будут сопровождать опытные инструктора. Катание на лошадях или иппотерапия очень полезна
+                                для детей и взрослых...</p>
+                        </header>
+                        <a href="tripPage.html" class="popularTrip__link"></a>
+                        <a href="tripPage.html"
+                            class="button popularTrip__button buton--rounded-normal buton--normal link--main">Подробнее</a>
+                    </div>
+                </article>
+                <article class="popularTrips__item">
+                    <img src="img/index-popTrips/index-popTrip3__2x.webp" srcset="
+                            img/index-popTrips/index-popTrip3__1x.webp 1x,
+                            img/index-popTrips/index-popTrip3__2x.webp 2x" alt="" class="popularTrip__img">
+                    <div class="d-flex flex-col j-between popularTrip__content">
+                        <header class="popularTrip__header">
+                            <span class="popularTrip__type">Квадротур</span>
+                            <h4 class="popularTrip__heading bold contrast">Пасть дракона</h4>
+                            <div class="popularTrip__characters d-flex">
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#time"></use>
+                                    </svg>
+                                    <span class="character__value">2,5 часа</span>
+                                </div>
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#cost"></use>
+                                    </svg>
+                                    <span class="character__value">3 515 ₽</span>
+                                </div>
+                            </div>
+                            <p class="popularTrip__description">Маршрут на Квадроциклах проходит по горной реке Мзымта
+                                вдоль белых скал и самшитовый лес к водопаду Глубокий Яр или "Пасть Дракона"
+                                (экскурсионное название). Высота водопада 41,5 метр - это один из самых высоких
+                                водопадов Большого Сочи...</p>
+                        </header>
+                        <a href="tripPage.html" class="popularTrip__link"></a>
+                        <a href="tripPage.html"
+                            class="button popularTrip__button buton--rounded-normal buton--normal link--main">Подробнее</a>
+                    </div>
+                </article>
+                <article class="popularTrips__item">
+                    <img src="img/index-popTrips/index-popTrip4__2x.webp" srcset="
+                            img/index-popTrips/index-popTrip4__1x.webp 1x,
+                            img/index-popTrips/index-popTrip4__2x.webp 2x" alt="" class="popularTrip__img">
+                    <div class="d-flex flex-col j-between popularTrip__content">
+                        <header class="popularTrip__header">
+                            <span class="popularTrip__type">Автобусный тур</span>
+                            <h4 class="popularTrip__heading bold contrast">Женский монастырь</h4>
+                            <div class="popularTrip__characters d-flex">
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#time"></use>
+                                    </svg>
+                                    <span class="character__value">4 часа</span>
+                                </div>
+                                <div class="popularTrip__characters__character">
+                                    <svg class="character__icon">
+                                        <use href="#cost"></use>
+                                    </svg>
+                                    <span class="character__value">618 ₽</span>
+                                </div>
+                            </div>
+                            <p class="popularTrip__description">Троице - Георгиевский женский монастырь расположен в
+                                селе Лесное в живописном месте, в котором гармонично сочетаются красота природы и
+                                красота архитектуры сотворенная руками человека. Это удивительное место расположено
+                                совсем недалеко от Чёрного моря - всего в 20 километрах...</p>
+                        </header>
+                        <a href="tripPage.html" class="popularTrip__link"></a>
+                        <a href="tripPage.html"
+                            class="button popularTrip__button buton--rounded-normal buton--normal link--main">Подробнее</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="section--main">
+            <div class="container index__about d-flex align-center j-end">
+                <div class="about__imgWrap">
+                    <picture>
+                        <source media="(min-width: 1221px)" srcset="
+                                img/index-about/about__1x.webp 1x,
+                                img/index-about/about__2x.webp 2x">
+                        <source media="(min-width: 730px)" srcset="
+                                img/index-about/about-laptop__1x.webp 1x,
+                                img/index-about/about-laptop__2x.webp 2x">
+                        <source srcset="
+                                img/index-about/about-mobile__1x.webp 1x,
+                                img/index-about/about-mobile__2x.webp 2x">
+                        <img src="img/index-about/about__2x.webp" alt="About" class="about__img">
+                    </picture>
+                </div>
+                <div class="about__content">
+                    <h2 class="h2--additional about__heading">О нас</h2>
+                    <p>PeroTravel - Первый онлайн-сервис по бронированию экскурсий без очередей и операторов. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo consequat. </p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section--main">
+            <div class="container">
+                <h2 class="h2--main">Виды экскурсий</h2>
+                <div class="tripTypes d-flex flex-wrap">
+                    <div class="tripTypes_type busTrip d-flex align-start">
+                        <img src="img/icons/bus.png" alt="" class="tripsType__type__icon">
+                        <div class="tripsType__type__content">
+                            <h3 class="tripsType__type__heading main-accent">Автобусный тур</h3>
+                            <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во
+                                время одной поездки можно посмотреть достопримечательности сразу нескольких городов,
+                                причем обойдется это едва ли не в разы дешевле классического экскурсионного тура с
+                                ночевками в отелях.</p>
+                        </div>
+                    </div>
+                    <div class="tripTypes_type yachtTrip d-flex align-start">
+                        <img src="img/icons/yacht.png" alt="" class="tripsType__type__icon">
+                        <div class="tripsType__type__content">
+                            <h3 class="tripsType__type__heading main-accent">Яхтинг</h3>
+                            <p>Это то же, что круиз на лайнере или прогулка на пароме, только на яхте больше свободы,
+                                размеры судна в разы меньше, нет назойливой команды, можно самостоятельно почувствовать
+                                себя капитаном, постоять за штурвалом. Именно здесь вы почувствуете величайшие просторы
+                                Черногор моря.</p>
+                        </div>
+                    </div>
+                    <div class="tripTypes_type carTrip d-flex align-start">
+                        <img src="img/icons/car.png" alt="" class="tripsType__type__icon">
+                        <div class="tripsType__type__content">
+                            <h3 class="tripsType__type__heading main-accent">Джиппинг</h3>
+                            <p>Это путешествие на автомобилях высокой проходимости с преодолением естественных
+                                препятствий, это экстремальный вид спорта и отдыха, представляющий собой прохождение
+                                туристического маршрута по бездорожью на автомобилях.</p>
+                        </div>
+                    </div>
+                    <div class="tripTypes_type canionTrip d-flex align-start">
+                        <img src="img/icons/canion.png" alt="" class="tripsType__type__icon">
+                        <div class="tripsType__type__content">
+                            <h3 class="tripsType__type__heading main-accent">Каньонинг</h3>
+                            <p>Это экстремально-спортивный вид отдыха, который заключается в преодолении каньонов
+                                (обводненных или нет) при помощи альпинистского и иного снаряжения, а иногда и вброд, но
+                                без лодок или иных плавсредств.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tripTypes__cta">
+                    <p class="tripTypes__ctaText">Выбирайте на нашем сайте экскурсию, которая подходит именно вам и
+                        записывайтесь онлайн без очередей, просто и быстро!</p>
+                    <a href="excursions.html" class="button buton--rounded-big buton--big link--main">К экскурсиям<div
+                            class="button__arrow"></div></a>
+                </div>
+            </div>
+        </section>
+        <section class="section--main">
+            <div class="container">
+                <div class="wrap h2--main d-flex j-between align-center">
+                    <h2>Галерея</h2>
+                    <a href="#" class="link link--viewAll flex0">Смотреть все</a>
+                </div>
+            </div>
+            <div class="tile-grid-wrap">
+                <div class="tile-grid gallery">
+                    <div class="tile-grid__item img-1 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo1__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo1__620h.webp">
+                            <source srcset="img/gallery/photo1.webp">
+                            <img src="img/gallery/photo1__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo1">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-2 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo2__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo2__620h.webp">
+                            <source srcset="img/gallery/photo2.webp">
+                            <img src="img/gallery/photo2__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo2">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-3 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo3__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo3__620h.webp">
+                            <source srcset="img/gallery/photo3.webp">
+                            <img src="img/gallery/photo3__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo3">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-4 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo4__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo4__620h.webp">
+                            <source srcset="img/gallery/photo4.webp">
+                            <img src="img/gallery/photo4__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo4">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-5 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo5__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo5__620h.webp">
+                            <source srcset="img/gallery/photo5.webp">
+                            <img src="img/gallery/photo5__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo5">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-6 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo6__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo6__620h.webp">
+                            <source srcset="img/gallery/photo6.webp">
+                            <img src="img/gallery/photo6__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo6">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-7 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo7__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo7__620h.webp">
+                            <source srcset="img/gallery/photo7.webp">
+                            <img src="img/gallery/photo7__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo7">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-8 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo8__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo8__620h.webp">
+                            <source srcset="img/gallery/photo8.webp">
+                            <img src="img/gallery/photo8__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo8">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-9 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo9__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo9__620h.webp">
+                            <source srcset="img/gallery/photo9.webp">
+                            <img src="img/gallery/photo9__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo9">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-10 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo10__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo10__620h.webp">
+                            <source srcset="img/gallery/photo10.webp">
+                            <img src="img/gallery/photo10__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo10">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-11 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo11__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo11__620h.webp">
+                            <source srcset="img/gallery/photo11.webp">
+                            <img src="img/gallery/photo11__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo11">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-12 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo12__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo12__620h.webp">
+                            <source srcset="img/gallery/photo12.webp">
+                            <img src="img/gallery/photo12__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo12">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-13 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo13__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo13__620h.webp">
+                            <source srcset="img/gallery/photo13.webp">
+                            <img src="img/gallery/photo13__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo13">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-14 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo14__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo14__620h.webp">
+                            <source srcset="img/gallery/photo14.webp">
+                            <img src="img/gallery/photo14__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo14">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-15 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo15__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo15__620h.webp">
+                            <source srcset="img/gallery/photo15.webp">
+                            <img src="img/gallery/photo15__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo15">
+                        </picture>
+                    </div>
+                    <div class="tile-grid__item img-16 clickable">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/gallery/photo16__780h.webp">
+                            <source media="(min-width: 576px)" srcset="img/gallery/photo16__620h.webp">
+                            <source srcset="img/gallery/photo16.webp">
+                            <img src="img/gallery/photo16__780h.webp" alt="Pero Travel" class="tile-grid__img"
+                                data-name="photo16">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section--main">
+            <div class="container">
+                <div class="h2--main d-flex j-between align-center">
+                    <h2>Отзывы</h2>
+                    <a href="#" class="link link--viewAll flex0">Смотреть все</a>
+                </div>
+            </div>
+            <div class="reviews gallery d-flex">
+                <article class="review d-flex align-start">
+                    <div class="review__imgContainer d-flex">
+                        <img src="img/review1.webp" alt="" class="review__img">
+                    </div>
+                    <div class="review__content">
+                        <h3 class="review__heading">Иван Иванов, 25 лет</h3>
+                        <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.</p>
+                        <span class="review__quotes contrast">”</span>
+                    </div>
+                </article>
+                <article class="review d-flex align-start">
+                    <div class="review__imgContainer d-flex">
+                        <img src="img/review2.webp" alt="" class="review__img">
+                    </div>
+                    <div class="review__content">
+                        <h3 class="review__heading">Иван Иванов, 25 лет</h3>
+                        <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.</p>
+                        <span class="review__quotes contrast">”</span>
+                    </div>
+                </article>
+                <article class="review d-flex align-start">
+                    <div class="review__imgContainer d-flex">
+                        <img src="img/review1.webp" alt="" class="review__img">
+                    </div>
+                    <div class="review__content">
+                        <h3 class="review__heading">Иван Иванов, 25 лет</h3>
+                        <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.</p>
+                        <span class="review__quotes contrast">”</span>
+                    </div>
+                </article>
+                <article class="review d-flex align-start">
+                    <div class="review__imgContainer d-flex">
+                        <img src="img/review2.webp" alt="" class="review__img">
+                    </div>
+                    <div class="review__content">
+                        <h3 class="review__heading">Иван Иванов, 25 лет</h3>
+                        <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                            laborum.</p>
+                        <span class="review__quotes contrast">”</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="form__section">
+            <picture>
+                <source media="(min-width: 1441px)" srcset="img/index-form/formBg__desktop--wide.webp">
+                <source media="(min-width: 769px)" srcset="img/index-form/formBg__desktop--normal.webp">
+                <source media="(min-width: 576px)" srcset="img/index-form/formBg__laptop.webp">
+                <source srcset="img/index-form/formBg__mobile.webp">
+                <img class="form__img" src="img/index-form/formBg__desktop--wide.webp" alt="">
+            </picture>
+            <div class="container form__container">
+                <form class="form" action="#" method="POST">
+                    <h2 class="form__caption">Остались вопросы?</h2>
+                    <p class="form__text contrast">Оставь заявку и мы ответим</p>
+                    <div class="form__inputWrap">
+                        <input type="text" class="form__input" id="name" placeholder="Имя">
+                        <label for="name" class="form__label">Имя</label>
+                    </div>
+                    <div class="form__inputWrap">
+                        <input type="tel" class="form__input" id="phone" required placeholder="Телефон" value=""
+                            data-mask="+7 (___) ___-__-__" pattern="\+7\s?[\(]?[0-9]{3}[\)]?\s?\d{3}[-]?\d{2}[-]?\d{2}">
+                        <label for="phone" class="form__label">Телефон</label>
+                    </div>
+                    <div class="form__inputWrap">
+                        <input type="email" class="form__input" id="email" placeholder="Почта">
+                        <label for="email" class="form__label">Почта</label>
+                    </div>
+                    <input type="submit" class="form__submit button buton--rounded-big buton--submit"
+                        value="Оставить заявку">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container d-flex footer__container align-center">
+            <a href="index.html" class="footer__logo--link link">
+                <img src="img\icons\logo_color.png" alt="" class="footer__logo">
+            </a>
+            <div class="footer__links d-flex j-between">
+                <div class="footer__pages">
+                    <a href="index.html" class="footer__pages__link link link--footer">Главная</a>
+                    <a href="excursions.html" class="footer__pages__link link link--footer">Экскурсии</a>
+                    <a href="#" class="footer__pages__link link link--footer">Личный кабинет</a>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__contacts__contact footer__whatsapp">
+                        <a class="link contact__link link--footer link" href="https://wa.me/+79649441874"
+                            target="_blank">
+                            <svg class="contact__whatsapp-icon contact__icon">
+                                <use href="#wh"></use>
+                            </svg>
+                            +7 964 944 18 74
+                        </a>
+                    </div>
+                    <div class="footer__contacts__contact footer__tg">
+                        <a class="link contact__link link--footer link" href="https://t.me/+79189199828"
+                            target="_blank">
+                            <svg class="contact__tg-icon contact__icon">
+                                <use href="#tg"></use>
+                            </svg>
+                            +7 918 919 98 28
+                        </a>
+                    </div>
+                    <div class="footer__contacts__contact footer__tgBot">
+                        <a class="link contact__link link--footer link" href="https://t.me/+79189199828"
+                            target="_blank">
+                            <svg class="contact__tgBot-icon contact__icon">
+                                <use href="#tg"></use>
+                            </svg>
+                            Телеграм-бот PeroTravel
+                        </a>
+                    </div>
+                    <div class="footer__contacts__contact footer__mail footer__mail--mobile">
+                        <a class="link contact__link link--footer link" href="mailto:office@perotravel.ru">
+                            <svg class="contact__mail-icon contact__icon">
+                                <use href="#mail"></use>
+                            </svg>
+                            office@perotravel.ru
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__socials">
+                <div class="footer__contacts__contact footer__mail footer__mail--desktop">
+                    <a class="link contact__link link--footer link" href="mailto:office@perotravel.ru">
+                        <svg class="contact__mail-icon contact__icon">
+                            <use href="#mail"></use>
+                        </svg>
+                        office@perotravel.ru
+                    </a>
+                </div>
+                <a href="#" class="footer__socials__vk link footer__socials--link link--footer">
+                    <svg class="vk-icon footer__vk-icon socials__icon">
+                        <use href="#vk"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer__socials__inst link footer__socials--link link--footer">
+                    <svg class="inst-icon footer__inst-icon socials__icon">
+                        <use href="#inst"></use>
+                    </svg>
+                </a>
+                <a href="#" class="footer__socials__facebook link footer__socials--link link--footer">
+                    <svg class="facebook-icon footer__facebook-icon socials__icon">
+                        <use href="#facebook"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

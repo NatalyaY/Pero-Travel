@@ -1,0 +1,88 @@
+.gallery {
+	-moz-user-select: none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	overflow: scroll hidden;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	white-space: nowrap;
+	touch-action: none;
+}
+
+.gallery::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+.gallery__controls__btns {
+	display: flex;
+	width: 86px;
+	justify-content: space-between;
+}
+
+.control__btn {
+	width: 25px;
+	height: 43px;
+	stroke: transparent;
+	fill: none;
+	stroke: #D4D4D4;
+}
+
+.control__btn--active {
+	stroke: #0499DD;
+	cursor: pointer;
+}
+
+.control__progressbar {
+	height: 2px;
+	width: 100%;
+	background-color: #D4D4D4;
+	position: relative;
+	margin-left: 52px;
+}
+
+.control__progressbar__pointer {
+	position: absolute;
+	height: 2px;
+	background-color: #0499DD;
+}
+
+
+/* ********* ********* MEDIA ********* ********* */
+
+@media (min-width: 0) {
+
+	.gallery__controls {
+		margin-top: 55px;
+	}
+
+	.tripPage__path__gallery .gallery__controls {
+		margin-top: 70px;
+	}
+
+}
+
+@media (min-width: 460px) {}
+
+@media (min-width: 576px) {
+
+	.gallery__controls {
+		margin-top: 40px;
+	}
+
+	.tripPage__path__gallery .gallery__controls {
+		margin-top: 40px;
+	}
+
+}
+
+@media (min-width: 769px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1220px) {}
+
+@media (min-width: 1441px) {}
