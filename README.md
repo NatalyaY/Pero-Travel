@@ -9,6 +9,7 @@ Pixel-perfect адаптивная верстка сложного шаблон�
 :white_check_mark: система связанных фильтров + Jquery Datepicker с кастомизацией для multirange-диапазонов    
 :white_check_mark: svg-спрайты    
 :white_check_mark: CSS Grids, flexbox    
+:white_check_mark: оптимизация всех изображений    
 
 ## Технологии   
 :white_check_mark: HTML5, CSS3     
