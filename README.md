@@ -1,4 +1,4 @@
-# Pero Travel сайт подбора туров (Vanilla JS) [(live version)](https://natalyay.github.io/Pero-travel/index.html)
+# Pero Travel сайт подбора туров (Vanilla JS) [(live version)](https://natalyay.github.io/pero-travel/)
 Pixel-perfect адаптивная верстка сложного шаблона со связанными фильтрами, кастомными галереями и плиточной раскладкой. HTML5, CSS3, Vanilla JS, JQuery, Webpack.
 ## Что интересного:   
 :white_check_mark: самописный видео-плейер    
